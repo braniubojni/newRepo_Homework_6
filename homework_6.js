@@ -4,10 +4,7 @@ let mary = {name:'Mary', surname: "Key", id: 2};
 let users = [john, mary];
 
 let newUsers = users.map(user => {
-	let tempUser = {};
-	tempUser['fullName'] = `${user.name} ${user.surname}`;
-	tempUser['id'] = user.id
-	return tempUser;
+	return {fullName: `${user.name} ${user.surname}`,id:user.id};
 });
 
 // let newUsers = users.map(user => {
